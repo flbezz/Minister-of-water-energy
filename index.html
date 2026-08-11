@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ministry of Water and Energy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="logo-removebg-preview.png" alt="" />
+        </div>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#section-6">News</a></li>
+          <li><a href="#section-4">Sector</a></li>
+          <li><a href="#section-5">Projects</a></li>
+          <li><a href="#section-3">Services</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#section-9">Contact</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="globe.png" alt="" width="15px" class="globe" /> EN</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+<section class="hero">
+  <div class="slide one active"></div>
+  <div class="slide two"></div>
+  <div class="slide three"></div>
+  <div class="slide four"></div>
+
+  <div class="home">
+    <div class="moto">
+      <p>Powering Ethiopia's</p>
+      <span>Sustainable Future.</span>
+    </div>
+
+    <div class="description">
+      <p>
+        Delivering clean water, renewable energy, and resilient
+        infrastructure that powers Ethiopia's future.
+      </p>
+    </div>
+
+    <div class="btn">
+      <button class="projects">Explore Projects →</button>
+      <button class="Services">Access Services</button>
+    </div>
+  </div>
+
+  <div class="dots" id="dots">
+    <button class="active" onclick="goTo(0)"></button>
+    <button onclick="goTo(1)"></button>
+    <button onclick="goTo(2)"></button>
+    <button onclick="goTo(3)"></button>
+  </div>
+</section>
+      <section class="section2">
+        <div class="title">National Impact</div>
+        <div class="goal">
+          Building infrastructure at the scale of a nation.
+        </div>
+        <div class="counting-data">
+          <div>
+            <div class="counter" data-target="258444"></div>
+            <span>Solar Panels Installed</span>
+          </div>
+          <div>
+            <div class="counter" data-target="12"></div>
+            <span>River Basins Managed</span>
+          </div>
+          <div>
+            <div class="counter" data-target="42"></div>
+            <span>National Projects</span>
+          </div>
+          <div>
+            <div class="counter" data-target="15" data-suffix="M+"></div>
+            <span>Citizens Benefiting</span>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="section-3"  class="section3">
+        <div class="title">Digital Services Portal</div>
+        <div class="goal">A single gateway to every ministry service.</div>
+        <p class="cards-description">
+          Four integrated platforms connecting citizens, professionals,
+          researchers, and partners to the Ministry's digital ecosystem.
+        </p>
+        <div class="cards">
+            <div class="card-1">
+              <div class="top">
+                <div class="card-icon icon">
+                  <i class="fa-solid fa-file-lines"></i>
+                </div>
+                <div class="Procurement">Procurement</div>
+              </div>
+              <h1 class="card-title">Tender Portal</h1>
+              <p class="card-description">
+                Active procurement opportunities and bid submission portal.
+              </p>
+              <hr />
+              <div class="stat">
+                <div>
+                  <p class="number">24</p>
+                  <p class="name">active</p>
+                </div>
+                <div>
+                  <p class="number">7</p>
+                  <p class="name">closing soon</p>
+                </div>
+                <div>
+                  <p class="number">312</p>
+                  <p class="name">completed</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <p>view All Tenders</p>
+                <div class="icon">
+                  <img src="arrow.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="card-1">
+              <div class="top">
+                <div class="card-icon icon">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="Procurement">Careers</div>
+              </div>
+              <h1 class="card-title">Vacancy Portal</h1>
+              <p class="card-description">
+                Career opportunities, internships and graduate programs.
+              </p>
+              <hr />
+              <div class="stat">
+                <div>
+                  <p class="number">36</p>
+                  <p class="name">Open Roles</p>
+                </div>
+                <div>
+                  <p class="number">18</p>
+                  <p class="name">Regions</p>
+                </div>
+                <div>
+                  <p class="number">100%</p>
+                  <p class="name">Online Apply</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <p>Explore Careers</p>
+                <div class="icon">
+                  <img src="arrow.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="card-1 premium-card">
+              <div class="top">
+                <div class="card-icon icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="Procurement"><i class="fa-solid fa-lock"></i> Employees only</div>
+              </div>
+              <h1 class="card-title">Learning Management</h1>
+              <p class="card-description">
+                Employee training and digital certificates.
+              </p>
+              <hr>
+              <div class="stat">
+                <div>
+                  <p class="number">140+</p>
+                  <p class="name">Courses</p>
+                </div>
+                <div>
+                  <p class="number">12k</p>
+                  <p class="name">Learners</p>
+                </div>
+                <div>
+                  <p class="number">96%</p>
+                  <p class="name">Completion</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <p>Employee Access</p>
+                <div class="icon">
+                  <img src="arrow.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="card-1">
+              <div class="top">
+                <div class="card-icon icon">
+                  <i class="fa-solid fa-flask"></i>
+                </div>
+                <div class="Procurement">Science</div>
+              </div>
+              <h1 class="card-title">Laboratory Information</h1>
+              <p class="card-description">
+                Water quality testing, sample tracking and scientific reports.
+              </p>
+              <hr />
+              <div class="stat">
+                <div>
+                  <p class="number">9</p>
+                  <p class="name">Labs</p>
+                </div>
+                <div>
+                  <p class="number">48k</p>
+                  <p class="name">Tests / yr</p>
+                </div>
+                <div>
+                  <p class="number">ISO</p>
+                  <p class="name">Accredited</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <p>Laboratory Portal</p>
+                <div class="icon">
+                  <img src="arrow.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section id="section-4" class="section4">
+        <div class="title">Ministry Sectors</div>
+        <div class="goal-4">Three sectors, one national mission.</div>
+
+        <div class="card-collection">
+          <div class="card-1-4">
+            <div class="image-1">
+              <div>Water Sector</div>
+            </div>
+            <div>
+              <h1>Rivers, basins & supply.</h1>
+              <p class="section4d">
+                Managing 12 major river basins, expanding irrigation, protecting
+                quality, and delivering safe water at national scale.
+              </p>
+              <div class="s4stat">
+                <div>
+                  <h1>12</h1>
+                  <p>River Basins</p>
+                </div>
+                <div>
+                  <h1>8.4M</h1>
+                  <p>Households Served</p>
+                </div>
+              </div>
+              <button>Explore Sector</button>
+            </div>
+          </div>
+          <div class="card-2-4">
+            <div>
+              <h1>Hydropower & the grid.</h1>
+              <p class="section4d">
+                Africa's leading hydropower portfolio backed by geothermal and
+                wind, powering industry and expanding rural access
+              </p>
+              <div class="s4stat">
+                <div>
+                  <h1>5.1 GW</h1>
+                  <p>Installed</p>
+                </div>
+                <div>
+                  <h1>78%</h1>
+                  <p>Access Rate</p>
+                </div>
+              </div>
+
+              <button>Explore Sector</button>
+            </div>
+            <div class="image-2">
+              <div>Energy Sector</div>
+            </div>
+          </div>
+          <div class="card-3-4">
+            <div class="image-3">
+              <div>Renewable Energy</div>
+            </div>
+            <div>
+              <h1>Solar, wind & clean tech</h1>
+              <p class="section4d">
+                Utility-scale solar farms and distributed systems accelerating
+                Ethiopia's clean-energy transition and climate goals.
+              </p>
+              <div class="s4stat">
+                <div>
+                  <h1>258k+</h1>
+                  <p>Solar Systems</p>
+                </div>
+                <div>
+                  <h1>340 MW</h1>
+                  <p>Wind Online</p>
+                </div>
+              </div>
+
+              <button>Explore Sector</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-5"  class="section5">
+        <div class="title">Featured Projects</div>
+        <div class="goal-5">
+          Landmark initiatives shaping Ethiopia's future.
+        </div>
+<div class="project-container">
+      <div class="Renaissance-card">
+        <div class="title-of-card">
+          <div class="label">
+            <p>Benishangul-Gumuz</p>
+            <p>Grand Ethiopian Renaissance Dam</p>
+          </div>
+          <div class="status">Under-Construction</div>
+        </div>
+        <div class="progress">
+          <div class="progress-data">
+            <p>Progress</p>
+            <p>88%</p>
+          </div>
+          <div class="progress-container">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+        <hr />
+        <div class="card-footer">
+          <div class="Budget">
+            <p>Budget</p>
+            <p>USD 5.0B</p>
+          </div>
+          <div class="timeline">
+            <p><i class="fa-solid fa-calendar-days"></i> Timeline</p>
+            <p>2011 - 2025</p>
+          </div>
+        </div>
+        <div class="detail">
+          view details <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+      </div>
+      <div class="Rural-Electrification">
+        <div class="Rural">
+          <div class="label">
+            <p>National — 9 regions</p>
+            <p>Rural Electrification Program</p>
+          </div>
+          <div class="status">Active</div>
+        </div>
+        <div class="progress">
+          <div class="progress-data">
+            <p>Progress</p>
+            <p>64%</p>
+          </div>
+          <div class="progress-container">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+        <hr />
+        <div class="card-footer">
+          <div class="Budget">
+            <p>Budget</p>
+            <p>USD 1.6B</p>
+          </div>
+          <div class="timeline">
+            <p><i class="fa-solid fa-calendar-days"></i> Timeline</p>
+            <p>2020 - 2027</p>
+          </div>
+        </div>
+        <div class="detail">
+          view details <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+      </div>
+      <div class="Transmission-Grid-Modernization">
+        <div class="water">
+          <div class="label">
+            <p>Amhara & Oromia</p>
+            <p>National Water Supply Expansion</p>
+          </div>
+          <div class="status">Amhara & Oromia</div>
+        </div>
+        <div class="progress">
+          <div class="progress-data">
+            <p>Progress</p>
+            <p>70%</p>
+          </div>
+          <div class="progress-container">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+        <hr />
+        <div class="card-footer">
+          <div class="Budget">
+            <p>Budget</p>
+            <p>USD 3.2B</p>
+          </div>
+          <div class="timeline">
+            <p><i class="fa-solid fa-calendar-days"></i> Timeline</p>
+            <p>2022 - 2028</p>
+          </div>
+        </div>
+        <div class="detail">
+          view details <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+      </div>
+    </div>
+      </section>
+      <section class="section5">
+        <div class="title">Announcement Center</div>
+        <div class="goal-5">Official notices & public statements.</div>
+        <div class="Announcement">
+          <div class="announcement-card">
+            <div class="main-announicemnt">
+              <div class="Announcement-type">
+                <i class="fa-regular fa-bell"></i> Featured Announcement
+              </div>
+            </div>
+            <div class="section5title">
+              Ministry launches nationwide digital transformation strategy
+              2026–2030
+            </div>
+            <div class="section5d">
+              A five-year roadmap to digitize every citizen-facing service,
+              unify data across sectors, and open procurement, learning, and
+              laboratory platforms to the public.
+            </div>
+            <div class="footer">
+              <p>Nov 18, 2026</p>
+              <a href="">Read statement</a>
+            </div>
+          </div>
+          <div class="Announcement-list">
+            <div class="ann">
+              <div class="ann-icon icon-1">
+                <i class="fa-regular fa-bell"></i>
+              </div>
+              <div class="ann-card">
+                <div class="anounement-title">
+                  <p>policy</p>
+                  <p>Nov 16,2026</p>
+                </div>
+                <div class="annd">
+                  New national tariff framework for renewable energy producers
+                </div>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#86898fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-up-right mt-2 h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:text-primary"
+                  aria-hidden="true"
+                >
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ann">
+              <div class="ann-icon"><i class="fa-regular fa-clock"></i></div>
+              <div class="ann-card">
+                <div class="anounement-title">
+                  <p>Tender</p>
+                  <p>Nov 12, 2026</p>
+                </div>
+                <div class="annd">
+                  Bid opening — Awash III water distribution networks
+                </div>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#86898fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-up-right mt-2 h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:text-primary"
+                  aria-hidden="true"
+                >
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ann">
+              <div class="ann-icon icon-3">
+                <i class="fa-regular fa-bell"></i>
+              </div>
+              <div class="ann-card">
+                <div class="anounement-title">
+                  <p>policy</p>
+                  <p>Nov 20,2026</p>
+                </div>
+                <div class="annd">
+                  National Water & Energy Innovation Summit 2026
+                </div>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#86898fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-up-right mt-2 h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:text-primary"
+                  aria-hidden="true"
+                >
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ann">
+              <div class="ann-icon" icon-4>
+                <i class="fa-regular fa-bell"></i>
+              </div>
+              <div class="ann-card">
+                <div class="anounement-title">
+                  <p>Notice</p>
+                  <p>Nov 08, 2026</p>
+                </div>
+                <div class="annd">
+                  Scheduled maintenance across Oromia transmission corridor
+                </div>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#86898fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-up-right mt-2 h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:text-primary"
+                  aria-hidden="true"
+                >
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-6" class="section-6">
+        <div class="minister">
+          <img src="image.png" alt="" />
+          <div class="name-minister">H.E. Dr. Habtamu Itefa</div>
+          <div class="position">Minister of Water & Energy</div>
+        </div>
+        <div class="content">
+          <div class="title">Message from the Minister</div>
+          <div class="message">
+            "Water and energy are the foundations upon which a modern,
+            prosperous Ethiopia is built."
+          </div>
+          <div class="messaged">
+            Our Ministry is committed to expanding access to clean water and
+            renewable electricity in every corner of the country. Through
+            investment in hydropower, solar, wind, and modern water systems, we
+            are laying the groundwork for sustainable development that reaches
+            every Ethiopian citizen.
+          </div>
+          <button>Read Full Message -></button>
+        </div>
+      </section>
+      <section class="section7">
+        <div class="title">Ministry Services</div>
+        <div class="goal-7">Six pillars of national development.</div>
+        <div class="pillars">
+          <div class="pillar">
+            <div class="p-icon"><i class="fa-solid fa-droplet"></i></div>
+            <div class="p-name">Water Resource Management</div>
+            <div class="p-d">
+              Sustainable stewardship of Ethiopia's twelve major river basins.
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="p-icon"><i class="fa-solid fa-solar-panel"></i></div>
+            <div class="p-name">Renewable Energy</div>
+            <div class="p-d">
+              Solar, wind, and geothermal generation expanding the national
+              grid.
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="p-icon"><i class="fa-solid fa-water"></i></div>
+            <div class="p-name">Hydropower Development</div>
+            <div class="p-d">
+              Harnessing river systems for reliable, low-carbon electricity.
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="p-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+            <div class="p-name">Climate Resilience</div>
+            <div class="p-d">
+              Adaptation programs safeguarding communities and ecosystems.
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="p-icon">
+              <i class="fa-solid fa-tower-broadcast"></i>
+            </div>
+            <div class="p-name">Rural Electrification</div>
+            <div class="p-d">
+              Bringing power to off-grid villages across every region.
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="p-icon"><i class="fa-solid fa-shield"></i></div>
+            <div class="p-name">Environmental Protection</div>
+            <div class="p-d">
+              Regulation and monitoring for a healthier natural environment.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section8">
+        <div class="title">Latest News</div>
+        <div class="goal-8">From the Ministry.</div>
+        <div class="section-8-cards">
+          <div class="card-section-8-1">
+          <div class="fan"><img src="fan.jpg" alt="" /></div>
+          <div class="sub-title-8">
+          <p>Energy</p>
+          <p>Nov 14,2026</p>
+          </div>
+          <p class="sub-d-8">Ethiopia commissions largest wind corridor in East Africa</p>
+          <p class="sub-p-8">
+            A 340 MW wind project comes online across the highlands, marking a
+            milestone in the nation's clean energy transition.
+          </p>
+          </div>
+           <div class="card-section-8-2">
+          <div class="card-8-2-1">
+            <div class="sub-news"><img src="tower.jpg" alt="" /></div>
+            <div>
+            <div class="sub-title-8">
+              <p>Grid</p>
+              <p>Nov 09,2026</p>
+            </div>
+            <p class="sub-description-8">New transmission lines extend national grid coverage by 18%</p>
+            </div>
+          </div>
+          <div class="card-8-2-1">
+            <div class="sub-news"><img src="rural.jpg" alt="" /></div>
+            <div>
+            <div class="sub-title-8">
+              <p>water</p>
+              <p>Nov 03,2026</p>
+            </div>
+            <p class="sub-description-8">Rural water program reaches its two-millionth beneficiary</p>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      </section>
+      <section id="section-9" class="section-9">
+      <div class="contact-hook-title">
+       Get in touch with the Ministry
+      </div>
+      <div class="contact-section-divider">
+        <div class="contact-div-one">
+ <div class="Emergencies">
+          <div class="Emergency-icon">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <div class="contact-headline">
+            <p class="time-line">24-hour emergency line</p>
+            <p>Water or power emergencies — call 
+              <a href="tel:+251 11 551 0199">+251 11 551 0199</a></p>
+          </div>
+        </div>
+       <div class="contact-info">
+        <div><i class="fa-solid fa-phone"></i> Phone</div>
+        <div>+251 11 551 0099</div>
+       </div>
+       <div class="contact-info">
+        <div><i class="fa-solid fa-envelope"></i> Email</div>
+        <div>info@mowe.gov.et</div>
+       </div>
+       <div class="contact-info">
+        <div><i class="fa-solid fa-clock"></i> Hours</div>
+        <div>Mon–Fri, 8:30–17:00</div>
+       </div>
+       <div class="contact-info">
+        <div><i class="fa-solid fa-location-dot"></i> HQ</div>
+        <div>Addis Ababa, Ethiopia</div>
+       </div>
+        </div>
+        <div class="contact-div-two">
+       <div class="contact-fill">
+        <div class="name">
+          <div>Full name</div>
+          <input type="text" placeholder="Your name">
+        </div>
+        <div>
+          <div>Email</div>
+          <input type="text" placeholder="You@gmail.com">
+        </div>
+        <div class="Message">
+          <div class="mess">Message</div>
+          <textarea name="" id="mess"></textarea>
+        </div>
+        <button>Send message</button>
+       </div>
+        </div>
+        </div>
+      </section>
+      <section class="section-10">
+        <div class="partnership">In partnership with</div>
+        <div class="sponser-container">
+          <div class="logos">
+        <img src="logo/world-bank-group.png" alt="">
+        <img src="logo/aics.png" alt="">
+        <img src="logo/BRITISH EMBACY_0.png" alt="">
+        <img src="logo/chek.png" alt="">
+        <img src="logo/DANISH.png" alt="">
+        <img src="logo/eu (1).png" alt="">
+        <img src="logo/ENA.png" alt="">
+        <img src="logo/france.png" alt="">
+        <img src="logo/GGGI.png" alt="">
+        <img src="logo/irc.jpeg" alt="">
+        <img src="logo/jica.png" alt="">
+        <img src="logo/kllll.png" alt="">
+        <img src="logo/norwa.png" alt="">
+        <img src="logo/SNV.png" alt="">
+        <img src="logo/UNDP.jpg" alt="">
+        <img src="logo/water-aid.jpg" alt="">
+        <img src="logo/GIZ.jpeg" alt="">
+        <img src="logo/iwmi.png" alt="">
+        <img src="logo/unicef.jpg" alt="">
+          </div>
+          <div class="logos">
+        <img src="logo/world-bank-group.jpg" alt="">
+        <img src="logo/aics.png" alt="">
+        <img src="logo/BRITISH EMBACY_0.png" alt="">
+        <img src="logo/chek.png" alt="">
+        <img src="logo/DANISH.png" alt="">
+        <img src="logo/eu (1).png" alt="">
+        <img src="logo/ENA.png" alt="">
+        <img src="logo/france.png" alt="">
+        <img src="logo/GGGI.png" alt="">
+        <img src="logo/irc.jpeg" alt="">
+        <img src="logo/jica.png" alt="">
+        <img src="logo/kllll.png" alt="">
+        <img src="logo/norwa.png" alt="">
+        <img src="logo/SNV.png" alt="">
+        <img src="logo/UNDP.jpg" alt="">
+        <img src="logo/water-aid.jpg" alt="">
+        <img src="logo/GIZ.jpeg" alt="">
+        <img src="logo/iwmi.png" alt="">
+        <img src="logo/unicef.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    <footer>
+      <div class="brand">
+     <img src="logo -inwhite.png" alt="">
+     <p>Powering Ethiopia's Sustainable Future.</p>
+     </div>
+     <div class="quick-links">
+      <div class="footer-title">Quick Links</div>
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Careers</a></li>
+      </ul>
+     </div>
+     <div class="contact">
+      <div class="footer-title">contact</div>
+     <p>Ministry Headquarters</p>
+     <p>Addis Ababa, Ethiopia</p>
+     <p>+251 11 000 0000</p>
+     <a href="mailto:info@mowe.gov.et">info@mowe.gov.et</a>
+     <div class="social-media">
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+     </div>
+     </div>
+  <hr class="footer-divider">
+   <div class="footer-right">
+     <div>© 2026 Ministry of Water & Energy. All rights reserved.</div>
+     <div class="footer-links">
+      <a href="">privacy</a>
+      <a href="">Accessibility</a>
+      <a href="">Terms</a>
+     </div>
+     </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

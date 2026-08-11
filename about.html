@@ -1,0 +1,1573 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About the Ministry | Ministry of Water & Energy</title>
+
+    <style>
+      :root {
+        --primary-color: #007bc7;
+        --primary-dark: #075b91;
+        --primary-light: #eef7fd;
+
+        --gold: #fab85a;
+        --gold-light: #fff6e7;
+
+        --text: #122033;
+        --text-soft: #526173;
+        --text-muted: #7c8795;
+
+        --background: #ffffff;
+        --surface: #f7f9fb;
+        --border: #e5eaf0;
+
+        --radius-lg: 22px;
+        --radius-md: 16px;
+        --radius-sm: 10px;
+
+        --container: 1180px;
+
+        --shadow-soft: 0 10px 35px rgba(15, 40, 65, 0.055);
+
+        --shadow-hover: 0 18px 45px rgba(15, 40, 65, 0.1);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family:
+          Inter,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+
+        color: var(--text);
+        background: var(--background);
+        line-height: 1.6;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button {
+        font: inherit;
+      }
+
+      .container {
+        width: min(var(--container), calc(100% - 48px));
+        margin-inline: auto;
+      }
+
+      /* =========================================================
+       HEADER
+    ========================================================= */
+
+      .site-header {
+        height: 78px;
+        border-bottom: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.96);
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        backdrop-filter: blur(14px);
+      }
+
+      .nav {
+        width: min(var(--container), calc(100% - 48px));
+        margin-inline: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: max-content;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+
+        display: grid;
+        place-items: center;
+
+        border-radius: 50%;
+        background: var(--primary-light);
+        color: var(--primary-color);
+
+        font-size: 18px;
+        font-weight: 800;
+
+        border: 1px solid #d9ebf8;
+      }
+
+      .brand-text strong {
+        display: block;
+        font-size: 14px;
+        line-height: 1.2;
+      }
+
+      .brand-text span {
+        display: block;
+        margin-top: 3px;
+
+        font-size: 9px;
+        color: var(--text-muted);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+
+        font-size: 13px;
+        color: var(--text-soft);
+      }
+
+      .nav-links a {
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover,
+      .nav-links a.active {
+        color: var(--primary-color);
+      }
+
+      .nav-links a.active {
+        font-weight: 700;
+      }
+
+      .nav-action {
+        padding: 11px 17px;
+
+        border-radius: 999px;
+        background: var(--primary-color);
+        color: white;
+
+        font-size: 12px;
+        font-weight: 700;
+
+        transition: 0.25s ease;
+      }
+
+      .nav-action:hover {
+        background: var(--primary-dark);
+        transform: translateY(-1px);
+      }
+
+      /* =========================================================
+       ABOUT INTRO
+       ========================================================= */
+
+      .about-intro {
+        padding: 95px 0 85px;
+        background: linear-gradient(180deg, #f8fbfd 0%, #ffffff 100%);
+      }
+
+      .intro-layout {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 100px;
+        align-items: end;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        color: var(--primary-color);
+
+        font-size: 11px;
+        font-weight: 800;
+
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+
+        border-radius: 50%;
+        background: var(--gold);
+      }
+
+      .intro-title {
+        max-width: 760px;
+
+        margin-top: 18px;
+
+        font-size: clamp(42px, 5vw, 68px);
+        line-height: 0.99;
+        letter-spacing: -0.045em;
+
+        font-weight: 750;
+      }
+
+      .intro-title span {
+        color: var(--primary-color);
+      }
+
+      .intro-description {
+        max-width: 690px;
+
+        margin-top: 27px;
+
+        color: var(--text-soft);
+        font-size: 16px;
+        line-height: 1.85;
+      }
+
+      .intro-side {
+        padding-left: 32px;
+        border-left: 1px solid var(--border);
+      }
+
+      .intro-side-label {
+        color: var(--text-muted);
+
+        font-size: 11px;
+        font-weight: 700;
+
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .intro-side p {
+        margin-top: 12px;
+
+        color: var(--text-soft);
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      /* =========================================================
+       MISSION / VISION
+       ========================================================= */
+
+      .mission-section {
+        padding: 90px 0;
+        border-top: 1px solid var(--border);
+      }
+
+      .section-heading {
+        margin-bottom: 38px;
+      }
+
+      .section-heading h2 {
+        margin-top: 10px;
+
+        font-size: clamp(28px, 3vw, 38px);
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+      }
+
+      .section-heading p {
+        max-width: 620px;
+        margin-top: 13px;
+
+        color: var(--text-soft);
+        font-size: 14px;
+      }
+
+      .mission-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+
+      .mission-card {
+        position: relative;
+
+        padding: 38px;
+
+        min-height: 270px;
+
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+
+        background: white;
+
+        box-shadow: var(--shadow-soft);
+
+        overflow: hidden;
+
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .mission-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-hover);
+      }
+
+      .mission-card::after {
+        content: "";
+
+        position: absolute;
+        right: -50px;
+        bottom: -60px;
+
+        width: 170px;
+        height: 170px;
+
+        border-radius: 50%;
+
+        background: var(--primary-light);
+      }
+
+      .mission-number {
+        color: var(--gold);
+
+        font-size: 12px;
+        font-weight: 800;
+
+        letter-spacing: 0.1em;
+      }
+
+      .mission-card h3 {
+        margin-top: 23px;
+
+        font-size: 24px;
+        letter-spacing: -0.02em;
+      }
+
+      .mission-card p {
+        max-width: 560px;
+
+        margin-top: 14px;
+
+        color: var(--text-soft);
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      /* =========================================================
+       VALUES
+       ========================================================= */
+
+      .values-section {
+        padding: 90px 0;
+
+        background: var(--surface);
+      }
+
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+      }
+
+      .value-card {
+        padding: 28px;
+
+        min-height: 230px;
+
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+
+        background: white;
+
+        transition: 0.25s ease;
+      }
+
+      .value-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-soft);
+        border-color: #cbdfea;
+      }
+
+      .value-icon {
+        width: 44px;
+        height: 44px;
+
+        display: grid;
+        place-items: center;
+
+        border-radius: 12px;
+
+        background: var(--primary-light);
+        color: var(--primary-color);
+
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .value-card h3 {
+        margin-top: 22px;
+
+        font-size: 17px;
+      }
+
+      .value-card p {
+        margin-top: 9px;
+
+        color: var(--text-soft);
+
+        font-size: 13px;
+        line-height: 1.7;
+      }
+
+      /* =========================================================
+       LEADERSHIP
+       ========================================================= */
+
+      .leadership-section {
+        padding: 100px 0;
+      }
+
+      .leadership-category {
+        margin-top: 55px;
+      }
+
+      .category-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        padding-bottom: 15px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .category-header h3 {
+        font-size: 20px;
+        letter-spacing: -0.02em;
+      }
+
+      .category-header span {
+        color: var(--text-muted);
+
+        font-size: 11px;
+        font-weight: 700;
+
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .leaders-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+
+        margin-top: 22px;
+      }
+
+      .leader-card {
+        overflow: hidden;
+
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+
+        background: white;
+
+        transition: 0.25s ease;
+      }
+
+      .leader-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-soft);
+      }
+
+      .leader-photo {
+        height: 190px;
+
+        display: grid;
+        place-items: center;
+
+        background: linear-gradient(145deg, #edf6fc, #dcecf7);
+
+        color: var(--primary-color);
+
+        font-size: 42px;
+        font-weight: 750;
+      }
+
+      .leader-info {
+        padding: 20px;
+      }
+
+      .leader-role {
+        color: var(--primary-color);
+
+        font-size: 11px;
+        font-weight: 750;
+
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .leader-name {
+        margin-top: 7px;
+
+        font-size: 16px;
+        font-weight: 750;
+      }
+
+      .leader-department {
+        margin-top: 5px;
+
+        color: var(--text-muted);
+        font-size: 12px;
+      }
+
+      /* Minister card gets special treatment */
+
+      .minister-grid {
+        display: grid;
+        grid-template-columns: minmax(280px, 1fr);
+      }
+
+      .minister-card {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+
+        overflow: hidden;
+
+        border: 1px solid #d8e7f1;
+        border-radius: var(--radius-lg);
+
+        background: linear-gradient(110deg, #f3f9fd, #ffffff);
+      }
+
+      .minister-photo {
+        min-height: 250px;
+
+        display: grid;
+        place-items: center;
+
+        background: var(--primary-light);
+
+        color: var(--primary-color);
+
+        font-size: 58px;
+        font-weight: 800;
+      }
+
+      .minister-info {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .minister-info .leader-name {
+        font-size: 27px;
+      }
+
+      .minister-description {
+        max-width: 650px;
+
+        margin-top: 12px;
+
+        color: var(--text-soft);
+
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      /* =========================================================
+       ACCOUNTABLE INSTITUTION
+       ========================================================= */
+
+      .accountability-section {
+        padding: 100px 0;
+
+        background: #f8fafc;
+      }
+
+      .accountability-layout {
+        display: grid;
+        grid-template-columns: 0.85fr 1.15fr;
+        gap: 80px;
+        align-items: center;
+      }
+
+      .accountability-title h2 {
+        margin-top: 12px;
+
+        font-size: clamp(30px, 3vw, 42px);
+        line-height: 1.1;
+        letter-spacing: -0.035em;
+      }
+
+      .accountability-title p {
+        margin-top: 20px;
+
+        color: var(--text-soft);
+
+        font-size: 14px;
+        line-height: 1.85;
+      }
+
+      .accountability-principles {
+        display: grid;
+        gap: 12px;
+      }
+
+      .accountability-item {
+        display: grid;
+        grid-template-columns: 48px 1fr;
+        gap: 18px;
+        align-items: start;
+
+        padding: 22px;
+
+        background: white;
+
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+      }
+
+      .accountability-icon {
+        width: 42px;
+        height: 42px;
+
+        display: grid;
+        place-items: center;
+
+        border-radius: 10px;
+
+        background: var(--gold-light);
+        color: #b97510;
+
+        font-weight: 800;
+      }
+
+      .accountability-item h3 {
+        font-size: 15px;
+      }
+
+      .accountability-item p {
+        margin-top: 4px;
+
+        color: var(--text-soft);
+
+        font-size: 12px;
+        line-height: 1.65;
+      }
+
+      /* =========================================================
+       ORGANIZATIONAL STRUCTURE
+       ========================================================= */
+
+      .structure-section {
+        padding: 100px 0;
+      }
+
+      .structure-intro {
+        max-width: 700px;
+      }
+
+      .structure-intro h2 {
+        margin-top: 12px;
+
+        font-size: clamp(30px, 3vw, 42px);
+        letter-spacing: -0.035em;
+        line-height: 1.1;
+      }
+
+      .structure-intro p {
+        margin-top: 16px;
+
+        color: var(--text-soft);
+
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .structure-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+
+        margin-top: 45px;
+      }
+
+      .structure-card {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+
+        background: white;
+
+        transition: 0.25s ease;
+      }
+
+      .structure-card:hover {
+        border-color: #cbdfea;
+        box-shadow: var(--shadow-soft);
+        transform: translateY(-3px);
+      }
+
+      .structure-icon {
+        width: 46px;
+        height: 46px;
+
+        display: grid;
+        place-items: center;
+
+        border-radius: 12px;
+
+        background: var(--primary-light);
+        color: var(--primary-color);
+
+        font-weight: 800;
+      }
+
+      .structure-card h3 {
+        margin-top: 20px;
+
+        font-size: 16px;
+      }
+
+      .structure-card p {
+        margin-top: 8px;
+
+        color: var(--text-soft);
+
+        font-size: 13px;
+        line-height: 1.7;
+      }
+
+      /* =========================================================
+       INSTITUTIONAL STATEMENT
+       ========================================================= */
+
+      .institution-section {
+        padding: 90px 0;
+
+        border-top: 1px solid var(--border);
+      }
+
+      .institution-box {
+        padding: 55px;
+
+        border-radius: var(--radius-lg);
+
+        background: linear-gradient(135deg, #082f4d, #075b91);
+
+        color: white;
+
+        position: relative;
+        overflow: hidden;
+      }
+
+      .institution-box::after {
+        content: "";
+
+        position: absolute;
+
+        width: 300px;
+        height: 300px;
+
+        right: -120px;
+        top: -120px;
+
+        border-radius: 50%;
+
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow:
+          0 0 0 40px rgba(255, 255, 255, 0.025),
+          0 0 0 80px rgba(255, 255, 255, 0.02);
+      }
+
+      .institution-box .eyebrow {
+        color: #bfe4fb;
+      }
+
+      .institution-box h2 {
+        max-width: 720px;
+
+        margin-top: 15px;
+
+        font-size: clamp(30px, 4vw, 48px);
+        line-height: 1.12;
+        letter-spacing: -0.035em;
+      }
+
+      .institution-box p {
+        max-width: 680px;
+
+        margin-top: 18px;
+
+        color: #dcecf7;
+
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      /* =========================================================
+       FOOTER
+       ========================================================= */
+
+      footer {
+        padding: 55px 0 30px;
+
+        background: #f5f8fa;
+
+        border-top: 1px solid var(--border);
+      }
+
+      .footer-top {
+        display: grid;
+        grid-template-columns: 1.4fr repeat(3, 1fr);
+        gap: 50px;
+      }
+
+      .footer-brand p {
+        max-width: 300px;
+
+        margin-top: 13px;
+
+        color: var(--text-muted);
+
+        font-size: 12px;
+        line-height: 1.7;
+      }
+
+      .footer-column h4 {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .footer-column a {
+        display: block;
+
+        margin-top: 10px;
+
+        color: var(--text-muted);
+
+        font-size: 12px;
+      }
+
+      .footer-column a:hover {
+        color: var(--primary-color);
+      }
+
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 45px;
+        padding-top: 20px;
+
+        border-top: 1px solid var(--border);
+
+        color: var(--text-muted);
+        font-size: 11px;
+      }
+
+      /* =========================================================
+       RESPONSIVE
+       ========================================================= */
+
+      @media (max-width: 1000px) {
+        .nav-links {
+          display: none;
+        }
+
+        .intro-layout {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .intro-side {
+          padding-left: 0;
+          border-left: none;
+          padding-top: 25px;
+          border-top: 1px solid var(--border);
+        }
+
+        .values-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .leaders-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .accountability-layout {
+          grid-template-columns: 1fr;
+          gap: 45px;
+        }
+
+        .structure-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-top {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 700px) {
+        .container {
+          width: min(var(--container), calc(100% - 32px));
+        }
+
+        .site-header {
+          height: 70px;
+        }
+
+        .nav {
+          width: calc(100% - 32px);
+        }
+
+        .brand-text span {
+          display: none;
+        }
+
+        .nav-action {
+          display: none;
+        }
+
+        .about-intro {
+          padding: 65px 0;
+        }
+
+        .intro-title {
+          font-size: 42px;
+        }
+
+        .mission-grid,
+        .values-grid,
+        .leaders-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .mission-card {
+          min-height: auto;
+        }
+
+        .minister-card {
+          grid-template-columns: 1fr;
+        }
+
+        .minister-photo {
+          min-height: 220px;
+        }
+
+        .minister-info {
+          padding: 28px;
+        }
+
+        .accountability-section,
+        .leadership-section,
+        .structure-section {
+          padding: 70px 0;
+        }
+
+        .institution-box {
+          padding: 35px 25px;
+        }
+
+        .footer-top {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-bottom {
+          flex-direction: column;
+          gap: 8px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =======================================================
+       HEADER
+  ======================================================== -->
+
+    <header class="site-header">
+      <nav class="nav">
+        <a href="#" class="brand">
+          <div class="brand-mark">◇</div>
+
+          <div class="brand-text">
+            <strong>Ministry of Water & Energy</strong>
+            <span>Federal Democratic Republic of Ethiopia</span>
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <a href="#" class="active">About</a>
+          <a href="#">Sectors</a>
+          <a href="#">Projects</a>
+          <a href="#">Services</a>
+          <a href="#">Resources</a>
+          <a href="#">Digital Services</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <a href="#" class="nav-action"> Access Digital Services </a>
+      </nav>
+    </header>
+
+    <!-- =======================================================
+       ABOUT INTRO
+       This is intentionally NOT a homepage hero.
+  ======================================================== -->
+
+    <main>
+      <section class="about-intro">
+        <div class="container">
+          <div class="intro-layout">
+            <div>
+              <div class="eyebrow">About the Ministry</div>
+
+              <h1 class="intro-title">
+                Serving the nation through
+                <span>water and energy.</span>
+              </h1>
+
+              <p class="intro-description">
+                The Ministry of Water & Energy (MoWE) is the federal authority
+                responsible for water resources management, energy development,
+                and the delivery of public services that power Ethiopia's
+                growth.
+              </p>
+            </div>
+
+            <div class="intro-side">
+              <div class="intro-side-label">Our institutional mandate</div>
+
+              <p>
+                Our mandate spans river basin governance, rural electrification,
+                renewable energy strategy, scientific research, and
+                citizen-facing digital services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         MISSION & VISION
+    ====================================================== -->
+
+      <section class="mission-section">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow">Direction</div>
+
+            <h2>What guides the Ministry</h2>
+
+            <p>
+              Our mission and vision establish the long-term direction of
+              Ethiopia's water and energy development.
+            </p>
+          </div>
+
+          <div class="mission-grid">
+            <article class="mission-card">
+              <div class="mission-number">01 / MISSION</div>
+
+              <h3>Our Mission</h3>
+
+              <p>
+                To drive sustainable national development through equitable
+                water resource management and universal access to clean,
+                affordable, renewable energy — delivered with transparency,
+                innovation, and public accountability.
+              </p>
+            </article>
+
+            <article class="mission-card">
+              <div class="mission-number">02 / VISION</div>
+
+              <h3>Our Vision</h3>
+
+              <p>
+                A Ethiopia where every citizen has reliable access to safe water
+                and clean energy, supported by world-class infrastructure,
+                scientific research, and digital public services.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         VALUES
+    ====================================================== -->
+
+      <section class="values-section">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow">Our Values</div>
+
+            <h2>Principles that guide our work</h2>
+
+            <p>
+              The standards that shape how the Ministry serves citizens and
+              manages national resources.
+            </p>
+          </div>
+
+          <div class="values-grid">
+            <article class="value-card">
+              <div class="value-icon">T</div>
+
+              <h3>Transparency</h3>
+
+              <p>
+                Open data, public reporting, and accountable governance in every
+                decision.
+              </p>
+            </article>
+
+            <article class="value-card">
+              <div class="value-icon">S</div>
+
+              <h3>Sustainability</h3>
+
+              <p>
+                Long-term stewardship of water and energy resources for future
+                generations.
+              </p>
+            </article>
+
+            <article class="value-card">
+              <div class="value-icon">I</div>
+
+              <h3>Innovation</h3>
+
+              <p>
+                Embracing technology and research to solve national challenges.
+              </p>
+            </article>
+
+            <article class="value-card">
+              <div class="value-icon">E</div>
+
+              <h3>Equity</h3>
+
+              <p>
+                Ensuring all regions and communities benefit from national
+                development.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         LEADERSHIP
+         Classified into 3 levels
+    ====================================================== -->
+
+      <section class="leadership-section">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow">Leadership</div>
+
+            <h2>Institutional leadership</h2>
+
+            <p>
+              The Ministry's leadership structure brings together executive
+              direction, sector leadership, and professional management.
+            </p>
+          </div>
+
+          <!-- ================= MINISTER ================= -->
+
+          <div class="leadership-category">
+            <div class="category-header">
+              <h3>Minister</h3>
+
+              <span> Executive leadership </span>
+            </div>
+
+            <div class="minister-grid">
+              <article class="minister-card">
+                <div class="minister-photo">M</div>
+
+                <div class="minister-info">
+                  <div class="leader-role">Minister</div>
+
+                  <div class="leader-name">H.E. Dr. Engineer</div>
+
+                  <p class="minister-description">
+                    Provides overall strategic leadership and institutional
+                    direction for Ethiopia's water and energy sectors.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- ================= STATE MINISTERS ================= -->
+
+          <div class="leadership-category">
+            <div class="category-header">
+              <h3>State Ministers</h3>
+
+              <span> Sector leadership </span>
+            </div>
+
+            <div class="leaders-grid">
+              <article class="leader-card">
+                <div class="leader-photo">S</div>
+
+                <div class="leader-info">
+                  <div class="leader-role">State Minister</div>
+
+                  <div class="leader-name">State Minister</div>
+
+                  <div class="leader-department">Water Sector</div>
+                </div>
+              </article>
+
+              <article class="leader-card">
+                <div class="leader-photo">S</div>
+
+                <div class="leader-info">
+                  <div class="leader-role">State Minister</div>
+
+                  <div class="leader-name">State Minister</div>
+
+                  <div class="leader-department">Energy Sector</div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- ================= MIDDLE MANAGEMENT ================= -->
+
+          <div class="leadership-category">
+            <div class="category-header">
+              <h3>Middle Management</h3>
+
+              <span> Professional management </span>
+            </div>
+
+            <div class="leaders-grid">
+              <article class="leader-card">
+                <div class="leader-photo">D</div>
+
+                <div class="leader-info">
+                  <div class="leader-role">Director General</div>
+
+                  <div class="leader-name">Director General</div>
+
+                  <div class="leader-department">Planning & Development</div>
+                </div>
+              </article>
+
+              <article class="leader-card">
+                <div class="leader-photo">D</div>
+
+                <div class="leader-info">
+                  <div class="leader-role">Director General</div>
+
+                  <div class="leader-name">Sector Director</div>
+
+                  <div class="leader-department">Water Resources</div>
+                </div>
+              </article>
+
+              <article class="leader-card">
+                <div class="leader-photo">D</div>
+
+                <div class="leader-info">
+                  <div class="leader-role">Director</div>
+
+                  <div class="leader-name">Sector Director</div>
+
+                  <div class="leader-department">Energy Development</div>
+                </div>
+              </article>
+
+              <article class="leader-card">
+                <div class="leader-photo">D</div>
+
+                <div class="leader-info">
+                  <div class="leader-role">Director</div>
+
+                  <div class="leader-name">Sector Director</div>
+
+                  <div class="leader-department">Digital Services</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         ACCOUNTABLE INSTITUTION
+    ====================================================== -->
+
+      <section class="accountability-section">
+        <div class="container">
+          <div class="accountability-layout">
+            <div class="accountability-title">
+              <div class="eyebrow">Accountability</div>
+
+              <h2>An accountable institution</h2>
+
+              <p>
+                The Ministry is committed to responsible governance, transparent
+                decision-making, and measurable public service. Accountability
+                is embedded in how we plan, manage resources, deliver services,
+                and report results.
+              </p>
+            </div>
+
+            <div class="accountability-principles">
+              <article class="accountability-item">
+                <div class="accountability-icon">01</div>
+
+                <div>
+                  <h3>Transparent governance</h3>
+
+                  <p>
+                    Making institutional information, decisions, and public
+                    resources more accessible to citizens.
+                  </p>
+                </div>
+              </article>
+
+              <article class="accountability-item">
+                <div class="accountability-icon">02</div>
+
+                <div>
+                  <h3>Responsible resource management</h3>
+
+                  <p>
+                    Managing national water and energy resources with
+                    efficiency, sustainability, and long-term public value in
+                    mind.
+                  </p>
+                </div>
+              </article>
+
+              <article class="accountability-item">
+                <div class="accountability-icon">03</div>
+
+                <div>
+                  <h3>Performance and reporting</h3>
+
+                  <p>
+                    Measuring institutional performance and communicating
+                    progress toward national development objectives.
+                  </p>
+                </div>
+              </article>
+
+              <article class="accountability-item">
+                <div class="accountability-icon">04</div>
+
+                <div>
+                  <h3>Citizen-centered services</h3>
+
+                  <p>
+                    Improving access to reliable information, digital services,
+                    and public-facing programs.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         ORGANIZATIONAL STRUCTURE
+    ====================================================== -->
+
+      <section class="structure-section">
+        <div class="container">
+          <div class="structure-intro">
+            <div class="eyebrow">Organizational Structure</div>
+
+            <h2>A coordinated national institution</h2>
+
+            <p>
+              The Ministry operates through specialized sectors, regional
+              bureaus, and central directorates — each accountable for
+              delivering on the national mandate for water and energy.
+            </p>
+          </div>
+
+          <div class="structure-grid">
+            <article class="structure-card">
+              <div class="structure-icon">R</div>
+
+              <h3>Research & Laboratory</h3>
+
+              <p>
+                Scientific research, water quality testing, technical studies,
+                and knowledge development.
+              </p>
+            </article>
+
+            <article class="structure-card">
+              <div class="structure-icon">D</div>
+
+              <h3>Digital Services</h3>
+
+              <p>
+                Digital platforms, citizen services, information systems, and
+                public-facing applications.
+              </p>
+            </article>
+
+            <article class="structure-card">
+              <div class="structure-icon">B</div>
+
+              <h3>Regional Bureaus</h3>
+
+              <p>
+                Regional offices supporting coordinated delivery of water and
+                energy programs nationwide.
+              </p>
+            </article>
+
+            <article class="structure-card">
+              <div class="structure-icon">W</div>
+
+              <h3>Water Sector</h3>
+
+              <p>
+                Water resources management, development, regulation, and
+                basin-level coordination.
+              </p>
+            </article>
+
+            <article class="structure-card">
+              <div class="structure-icon">E</div>
+
+              <h3>Energy Sector</h3>
+
+              <p>
+                Energy development, renewable energy strategy, electrification,
+                and sector coordination.
+              </p>
+            </article>
+
+            <article class="structure-card">
+              <div class="structure-icon">P</div>
+
+              <h3>Planning & Development</h3>
+
+              <p>
+                Strategic planning, institutional development, monitoring, and
+                performance coordination.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         INSTITUTIONAL STATEMENT
+    ====================================================== -->
+
+      <section class="institution-section">
+        <div class="container">
+          <div class="institution-box">
+            <div class="eyebrow">Our Institutional Commitment</div>
+
+            <h2>
+              Building a more sustainable, accountable, and resilient Ethiopia.
+            </h2>
+
+            <p>
+              Through responsible resource management, scientific knowledge,
+              innovation, and strong public institutions, the Ministry works to
+              create lasting value for citizens and future generations.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =======================================================
+       FOOTER
+  ======================================================== -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="brand">
+              <div class="brand-mark">◇</div>
+
+              <div class="brand-text">
+                <strong>Ministry of Water & Energy</strong>
+                <span>Federal Democratic Republic of Ethiopia</span>
+              </div>
+            </a>
+
+            <p>
+              Federal authority responsible for water resources, energy
+              development, and related public services.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h4>Ministry</h4>
+
+            <a href="#">About</a>
+            <a href="#">Leadership</a>
+            <a href="#">Structure</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>Sectors</h4>
+
+            <a href="#">Water</a>
+            <a href="#">Energy</a>
+            <a href="#">Research</a>
+            <a href="#">Digital Services</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>Resources</h4>
+
+            <a href="#">Projects</a>
+            <a href="#">Reports</a>
+            <a href="#">Publications</a>
+            <a href="#">Announcements</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span> © 2026 Ministry of Water & Energy </span>
+
+          <span> Federal Democratic Republic of Ethiopia </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
